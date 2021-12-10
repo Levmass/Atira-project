@@ -1,0 +1,237 @@
+@import "nullstyle.scss";
+
+// @import url("https://fonts.googleapis.com/css2?family=Dosis:wght@300;400;500;600&family=Grenze+Gotisch:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dosis:wght@300;400;500;600&family=Grenze+Gotisch:wght@300&display=swap");
+// font-family: 'Dosis', sans-serif;
+
+// font-family: 'Grenze Gotisch', cursive;
+
+html,
+body {
+  height: 100%;
+  background-color: #f2f2f2;
+  font-family: "Dosis", sans-serif;
+}
+body.lock {
+  overflow: hidden;
+}
+.wrapper {
+  max-width: 1920px;
+  min-height: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.container {
+  max-width: 1280px;
+  margin: 0px auto;
+  font-size: 12px;
+}
+.ibg {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    img{display: none;}
+}
+
+@media (max-width: 1251px) {
+  .wrapper {
+    max-width: 1250px;
+  }
+}
+@media (max-width: 971px) {
+  .wrapper {
+    max-width: 970px;
+  }
+}
+@media (max-width: 751px) {
+  .wrapper {
+    max-width: 750px;
+  }
+}
+@media (max-width: 376px) {
+  .wrapper {
+    max-width: 375px;
+  }
+}
+
+@import "header.scss";
+
+/* ------------------------------Main block--------------------------- */
+.page {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+}
+.page-whoweare {
+  letter-spacing: 0.2px;
+}
+
+.main-screen {
+    flex: 1 0 100%;
+    position: relative;
+    &__content {
+    }
+
+    &__bg {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        -webkit-filter: grayscale(100%);
+        filter: grayscale(100%);
+        transition: all 1.2s ease 0s;
+        &:hover{
+          -webkit-filter: grayscale(0%);
+          filter: grayscale(0%);
+        }
+    }    
+
+    &__text {
+      position: absolute;
+      top: 50%;
+      left: 0;
+      right: 0;
+      bottom: 50%;
+      font-size: 65px;
+      letter-spacing: 5px;
+      color: #f2f2f2;
+      text-align: center;
+      @media (max-width: 1010px) {
+        font-size: 35px;
+      }
+    }
+}
+
+
+.main_cover {
+  object-fit: cover;
+  width: 100%;
+}
+.cover-image {
+  position: relative;
+  object-fit: cover;
+  width: 100%;
+  margin-top: 50px;
+  height: auto;
+  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%);
+  transition: all 1.2s ease 0s;
+}
+.cover-image:hover {
+  -webkit-filter: grayscale(0%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(0%);
+  transition: all 1.2s ease 0s;
+}
+.cover-text {
+}
+.cover-image-text {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  bottom: 50%;
+  font-size: 92px;
+  color: #f2f2f2;
+  text-align: center;
+}
+@media (max-width: 1400px) {
+  .cover-image-text {
+    position: absolute;
+    top: 30%;
+    left: 0;
+    right: 0;
+    bottom: 50%;
+  }
+}
+@media (max-width: 992px) {
+  .cover-image.active {
+    -webkit-filter: grayscale(0%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(0%);
+  }
+  .cover-image {
+    object-position: left;
+    width: auto;
+  }
+  .cover-image-text {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    bottom: 50%;
+    font-size: 60px;
+  }
+}
+@media (max-width: 767px) {
+  .cover-image {
+    margin-top: 40px;
+    opacity: 1;
+  }
+  .cover-image-text {
+    color: cadetblue;
+  }
+}
+.whoweare {
+  padding: 60px 0px 0px 0px;
+}
+.whoweare_container {
+}
+.whoweare_header {
+}
+.header-block {
+}
+.header-block_title {
+  margin-bottom: 40px;
+  font-size: 28px;
+  text-align: center;
+}
+.header-block_sub-title {
+  font-size: 18px;
+  margin-bottom: 50px;
+  padding: 0px 10px 20px 10px;
+}
+.whoweare_body {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0px 10px 0px 10px;
+}
+.whoweare_photo {
+}
+.photo-whoweare {
+  flex: 1 0 50%;
+}
+.whoweare-image {
+  max-width: 100%;
+}
+.whoweare-image:first-child {
+  padding-right: 10px;
+}
+@media (max-width: 767px) {
+  .whoweare_body {
+    padding: 0px 0px 0px 0px;
+  }
+  .photo-whoweare {
+    flex: 1 1 100%;
+    margin-top: 2px;
+  }
+  .whoweare {
+    padding: 15px 0px 0px 0px;
+  }
+  .whoweare-image:first-child {
+    padding-right: 0px;
+    margin-bottom: 10px;
+  }
+  .header-block_title {
+    margin-bottom: 10px;
+  }
+  .header-block_sub-title {
+    margin-bottom: 10px;
+  }
+}
+@import "footer.scss";
+
