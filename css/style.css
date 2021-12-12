@@ -359,10 +359,10 @@ body.lock {
   height: 100%;
   background-image: url("../img/header/snow/4.png"), url("../img/header/snow/2.png"), url("../img/header/snow/3.png");
   -webkit-animation: snow 20s linear infinite;
-          animation: snow 20s linear infinite;
+  animation: snow 20s linear infinite;
 }
 
-@-webkit-keyframes snow {
+@keyframes snow {
   0% {
     background-position: 0px 0px, 0px 0px, 0px 0px;
   }
@@ -370,8 +370,7 @@ body.lock {
     background-position: 500px 1000px, 400px 400px, 300px 300px;
   }
 }
-
-@keyframes snow {
+@-webkit-keyframes snow {
   0% {
     background-position: 0px 0px, 0px 0px, 0px 0px;
   }
