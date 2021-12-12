@@ -1,16 +1,19 @@
 @import "nullstyle.scss";
 
-// @import url("https://fonts.googleapis.com/css2?family=Dosis:wght@300;400;500;600&family=Grenze+Gotisch:wght@300&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Dosis:wght@300;400;500;600&family=Grenze+Gotisch:wght@300&display=swap");
-// font-family: 'Dosis', sans-serif;
-
-// font-family: 'Grenze Gotisch', cursive;
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@300;400;500;600&family=Grenze+Gotisch:wght@300&family=Montserrat:wght@300;400;500&family=Raleway:wght@300;400;500&display=swap');
 
 html,
 body {
   height: 100%;
   background-color: #f2f2f2;
+  font-family: "Raleway", sans-serif;
+}
+.font-en {
   font-family: "Dosis", sans-serif;
+}
+.font-en_text {
+  font-size: 20px;
+  font-weight: bold;
 }
 body.lock {
   overflow: hidden;
@@ -67,9 +70,7 @@ body.lock {
     display: flex;
     flex-direction: column;
 }
-.page-whoweare {
-  letter-spacing: 0.2px;
-}
+
 
 .main-screen {
     flex: 1 0 100%;
@@ -93,148 +94,122 @@ body.lock {
     }    
 
     &__text {
-      position: absolute;
-      top: 50%;
-      left: 0;
-      right: 0;
-      bottom: 50%;
-      font-size: 65px;
-      letter-spacing: 5px;
-      color: #f2f2f2;
-      text-align: center;
-      @media (max-width: 1010px) {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        right: 0;
+        bottom: 50%;
+        font-size: 65px;
+        letter-spacing: 5px;
+        color: #f2f2f2;
+        text-align: center;
+        @media (max-width: 1010px) {
         font-size: 35px;
-      }
+        }
     }
 }
 
+.content {
+  // position: relative;
+  letter-spacing: 0.2px;
+}
 
-.main_cover {
-  object-fit: cover;
-  width: 100%;
+.text {
+  max-width: 1080px;
+  margin: 0px auto;
 }
-.cover-image {
-  position: relative;
-  object-fit: cover;
-  width: 100%;
-  margin-top: 50px;
-  height: auto;
-  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
-  filter: grayscale(100%);
-  transition: all 1.2s ease 0s;
-}
-.cover-image:hover {
-  -webkit-filter: grayscale(0%); /* Safari 6.0 - 9.0 */
-  filter: grayscale(0%);
-  transition: all 1.2s ease 0s;
-}
-.cover-text {
-}
-.cover-image-text {
-  position: absolute;
-  top: 50%;
-  left: 0;
-  right: 0;
-  bottom: 50%;
-  font-size: 92px;
-  color: #f2f2f2;
-  text-align: center;
-}
-@media (max-width: 1400px) {
-  .cover-image-text {
-    position: absolute;
-    top: 30%;
-    left: 0;
-    right: 0;
-    bottom: 50%;
-  }
-}
-@media (max-width: 992px) {
-  .cover-image.active {
-    -webkit-filter: grayscale(0%); /* Safari 6.0 - 9.0 */
-    filter: grayscale(0%);
-  }
-  .cover-image {
-    object-position: left;
-    width: auto;
-  }
-  .cover-image-text {
-    position: absolute;
-    top: 50%;
-    left: 0;
-    right: 0;
-    bottom: 50%;
-    font-size: 60px;
-  }
-}
-@media (max-width: 767px) {
-  .cover-image {
-    margin-top: 40px;
-    opacity: 1;
-  }
-  .cover-image-text {
-    color: cadetblue;
-  }
-}
-.whoweare {
-  padding: 60px 0px 0px 0px;
-}
-.whoweare_container {
-}
-.whoweare_header {
-}
-.header-block {
-}
-.header-block_title {
-  margin-bottom: 40px;
+.title {
+  margin: 0px 0px 20px 0px;
   font-size: 28px;
   text-align: center;
 }
-.header-block_sub-title {
+.subtitle {
   font-size: 18px;
-  margin-bottom: 50px;
   padding: 0px 10px 20px 10px;
 }
-.whoweare_body {
+
+//-------------------------------WHOWEARE SECTION------------------------------
+.whoweare {
+  
+		&__text {
+      padding: 40px 0px 0px 0px;
+		}
+
+		&__title {
+      
+		}
+
+		&__subtitle {
+      margin: 0px 0px 20px 0px;
+		}
+
+		&__body {
+
+		}
+
+		&__photo {
+		}
+}
+
+//-------------------------------HEMA SECTION------------------------------
+.hema {
+  background: pink;
+  color: #141414;
+		&__body {
+      
+		}
+
+		&__photo {
+		}
+
+		&__image {
+		}
+
+		&__text {
+      padding: 40px 0px 0px 0px;
+		}
+
+		&__title {
+		}
+
+		&__subtitle {
+      padding: 0px 0px 20px 0px;
+		}
+}
+.photo-body {
   display: flex;
   flex-wrap: wrap;
-  padding: 0px 10px 0px 10px;
 }
-.whoweare_photo {
-}
-.photo-whoweare {
+.photo {
   flex: 1 0 50%;
 }
-.whoweare-image {
+.image {
   max-width: 100%;
+  padding: 10px;
 }
-.whoweare-image:first-child {
-  padding-right: 10px;
-}
+
 @media (max-width: 767px) {
-  .whoweare_body {
+  .photo-body {
     padding: 0px 0px 0px 0px;
   }
-  .photo-whoweare {
+  .photo {
     flex: 1 1 100%;
     margin-top: 2px;
   }
   .whoweare {
     padding: 15px 0px 0px 0px;
   }
-  .whoweare-image:first-child {
-    padding-right: 0px;
+  // .image:first-child {
+  //   padding-right: 0px;
+  //   margin-bottom: 10px;
+  // }
+  .title {
     margin-bottom: 10px;
   }
-  .header-block_title {
+  .subtitle {
     margin-bottom: 10px;
   }
-  .header-block_sub-title {
-    margin-bottom: 10px;
-  }
-}
+}  
 @import "footer.scss";
 
 /*-----------------------------------CONTACTS BLOCK----------------------*/
-
-@import "contacts.scss";
