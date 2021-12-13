@@ -555,7 +555,6 @@ body.lock {
 }
 
 .hema {
-  background: pink;
   color: #141414;
 }
 .hema__text {
@@ -625,20 +624,24 @@ body.lock {
 }
 
 .animation {
+  padding: 20px 0px;
   margin: 100px auto 0px auto;
-  max-width: 150px;
+  background-color: #141414;
   text-align: center;
 }
 .animation__body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin: 0px auto;
+  max-width: 150px;
 }
 .animation__item {
   -webkit-box-flex: 0;
       -ms-flex: 0 1 50%;
           flex: 0 1 50%;
   height: 300px;
+  max-width: 75px;
   position: relative;
 }
 .animation__item img {

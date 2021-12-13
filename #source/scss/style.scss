@@ -230,7 +230,6 @@ body.lock {
 }
 //-------------------------------HEMA SECTION------------------------------
 .hema {
-  background: pink;
   color: #141414;
 		&__body {
       
@@ -305,20 +304,23 @@ body.lock {
 }
 
 .animation {
+  padding: 20px 0px;
   margin: 100px auto 0px auto;
-  max-width: 150px;
+  // max-width: 150px;
+  background-color: #141414;
   text-align: center;
 		&__body {
       display: flex;
-      
+      margin: 0px auto;
+      max-width: 150px;
 		}
 
 		&__item {
+      
       flex: 0 1 50%;
       height: 300px;
-      
+      max-width: 75px;
       position: relative;
-      
       img{
         position: absolute;
         top: 0;
