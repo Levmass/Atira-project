@@ -124,7 +124,6 @@ body.lock {
 .container {
   max-width: 1280px;
   margin: 0px auto;
-  font-size: 12px;
 }
 
 .ibg {
@@ -442,40 +441,133 @@ body.lock {
 }
 
 .content {
-  letter-spacing: 0.2px;
-}
-
-.text {
-  max-width: 1080px;
-  margin: 0px auto;
-}
-
-.title {
-  margin: 0px 0px 20px 0px;
-  font-size: 28px;
-  text-align: center;
-}
-
-.subtitle {
-  font-size: 18px;
-  padding: 0px 10px 20px 10px;
+  letter-spacing: 0.9px;
 }
 
 .whoweare__text {
-  padding: 40px 0px 0px 0px;
+  padding: 120px 0px 0px 0px;
 }
 .whoweare__subtitle {
-  margin: 0px 0px 20px 0px;
+  margin: 0px 0px 60px 0px;
 }
+.whoweare__row {
+  max-width: 830px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 0;
+  margin: 0px auto 90px auto;
+}
+@media (max-width: 855px) {
+  .whoweare__row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+.whoweare__column {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 33.333%;
+          flex: 0 0 33.333%;
+  padding: 0px 15px;
+}
+@media (max-width: 855px) {
+  .whoweare__column {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 0 100%;
+            flex: 1 0 100%;
+  }
+}
+@media (max-width: 767px) {
+  .whoweare__text {
+    padding: 50px 0px 0px 0px;
+  }
+  .whoweare__subtitle {
+    margin: 0px 0px 0px 0px;
+  }
+}
+
+.item-whoweare__icon {
+  margin: 0px auto;
+  border-radius: 50%;
+  width: 92px;
+  height: 92px;
+  border: 2px solid #f1f1f1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.item-whoweare__title {
+  color: #000000;
+  font-size: 22px;
+  font-weight: 400;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 3.52px;
+  margin: 0px 0px 35px 0px;
+}
+.item-whoweare__text {
+  color: #868585;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 26px;
+  text-align: center;
+}
+
+.item-about__icon {
+  margin: 0px auto;
+  border-radius: 50%;
+  width: 92px;
+  height: 92px;
+  border: 2px solid #f1f1f1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.item-about__title {
+  color: #000000;
+  font-size: 22px;
+  font-weight: 400;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 3.52px;
+  margin: 0px 0px 35px 0px;
+}
+.item-about__text {
+  color: #3b3b3b;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 26px;
+  text-align: center;
+}
+
 .hema {
   background: pink;
   color: #141414;
 }
 .hema__text {
-  padding: 40px 0px 0px 0px;
+  padding: 100px 0px 0px 0px;
 }
 .hema__subtitle {
   padding: 0px 0px 20px 0px;
+}
+@media (max-width: 767px) {
+  .hema__text {
+    padding: 20px 0px 0px 0px;
+  }
 }
 
 .photo-body {
@@ -497,6 +589,126 @@ body.lock {
   padding: 10px;
 }
 
+.text {
+  max-width: 830px;
+  margin: 0px auto;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.title {
+  margin: 0px 0px 35px 0px;
+  font-size: 34px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  position: relative;
+  text-align: center;
+  padding: 0px 0px 35px 0px;
+}
+.title::after {
+  content: "";
+  position: absolute;
+  width: 81px;
+  bottom: 0;
+  height: 1px;
+  left: 50%;
+  background-color: #000000;
+  margin: 0px 0px 0px -40px;
+}
+
+.subtitle {
+  font-size: 18px;
+  padding: 0px 10px 20px 10px;
+  text-align: justify;
+  color: #3b3b3b;
+}
+
+.animation {
+  margin: 0px auto;
+  max-width: 300px;
+  text-align: center;
+}
+.animation__body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.animation__item {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 50%;
+          flex: 0 1 50%;
+  height: 600px;
+  position: relative;
+}
+.animation__item img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.animation__item._active:nth-child(1) {
+  -webkit-animation-name: sword1;
+          animation-name: sword1;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-timing-function: cubic-bezier(0.68, 0, 0.265, 1.55);
+          animation-timing-function: cubic-bezier(0.68, 0, 0.265, 1.55);
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+  -webkit-animation-direction: normal;
+          animation-direction: normal;
+  -webkit-animation-play-state: running;
+          animation-play-state: running;
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+}
+.animation__item._active:nth-child(2) {
+  -webkit-animation-name: sword2;
+          animation-name: sword2;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-timing-function: cubic-bezier(0.68, 0, 0.265, 1.55);
+          animation-timing-function: cubic-bezier(0.68, 0, 0.265, 1.55);
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+  -webkit-animation-direction: normal;
+          animation-direction: normal;
+  -webkit-animation-play-state: running;
+          animation-play-state: running;
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+}
+@-webkit-keyframes sword1 {
+  100% {
+    -webkit-transform: rotate(25deg);
+            transform: rotate(25deg);
+  }
+}
+@keyframes sword1 {
+  100% {
+    -webkit-transform: rotate(25deg);
+            transform: rotate(25deg);
+  }
+}
+@-webkit-keyframes sword2 {
+  100% {
+    -webkit-transform: rotate(-25deg);
+            transform: rotate(-25deg);
+  }
+}
+@keyframes sword2 {
+  100% {
+    -webkit-transform: rotate(-25deg);
+            transform: rotate(-25deg);
+  }
+}
+
 @media (max-width: 767px) {
   .photo-body {
     padding: 0px 0px 0px 0px;
@@ -506,19 +718,11 @@ body.lock {
     -webkit-box-flex: 1;
         -ms-flex: 1 1 100%;
             flex: 1 1 100%;
-    margin-top: 2px;
   }
 
-  .whoweare {
-    padding: 15px 0px 0px 0px;
-  }
-
-  .title {
-    margin-bottom: 10px;
-  }
-
-  .subtitle {
-    margin-bottom: 10px;
+  .image {
+    margin: -5px 0px;
+    padding: 10px 0px;
   }
 }
 .footer {
