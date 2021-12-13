@@ -559,7 +559,7 @@ body.lock {
   color: #141414;
 }
 .hema__text {
-  padding: 100px 0px 0px 0px;
+  padding: 30px 0px 0px 0px;
 }
 .hema__subtitle {
   padding: 0px 0px 20px 0px;
@@ -625,8 +625,8 @@ body.lock {
 }
 
 .animation {
-  margin: 0px auto;
-  max-width: 300px;
+  margin: 100px auto 0px auto;
+  max-width: 150px;
   text-align: center;
 }
 .animation__body {
@@ -638,7 +638,7 @@ body.lock {
   -webkit-box-flex: 0;
       -ms-flex: 0 1 50%;
           flex: 0 1 50%;
-  height: 600px;
+  height: 300px;
   position: relative;
 }
 .animation__item img {
@@ -661,8 +661,8 @@ body.lock {
           animation-direction: normal;
   -webkit-animation-play-state: running;
           animation-play-state: running;
-  -webkit-animation-delay: 0s;
-          animation-delay: 0s;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
   -webkit-animation-fill-mode: both;
           animation-fill-mode: both;
 }
@@ -679,8 +679,8 @@ body.lock {
           animation-direction: normal;
   -webkit-animation-play-state: running;
           animation-play-state: running;
-  -webkit-animation-delay: 0s;
-          animation-delay: 0s;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
   -webkit-animation-fill-mode: both;
           animation-fill-mode: both;
 }
