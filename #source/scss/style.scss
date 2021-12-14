@@ -2,9 +2,8 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Dosis:wght@300;400;500;600&family=Grenze+Gotisch:wght@300&family=Montserrat:wght@300;400;500&family=Raleway:wght@300;400;500&display=swap');
 
-html,
 body {
-  height: 100%;
+  // height: 100%;
   background-color: #f2f2f2;
   font-family: "Raleway", sans-serif;
 }
@@ -21,7 +20,6 @@ body.lock {
 .wrapper {
   max-width: 1920px;
   min-height: 100%;
-  height: 100%;
   display: flex;
   flex-direction: column;
 }
@@ -62,10 +60,10 @@ body.lock {
 /* ------------------------------Main block--------------------------- */
 .page {
     position: absolute;
-    width: 100%;
-    height: 100%;
     top: 0;
     left: 0;
+    width: 100%;
+    height: 100%;
     display: flex;
     flex-direction: column;
 }
@@ -109,8 +107,111 @@ body.lock {
 }
 
 .content {
-  // position: relative;
+  flex: 1 1 auto;
   letter-spacing: 0.9px;
+		&__body {
+      margin: 150px 0px 80px 0px;
+      line-height: 30px;
+      padding: 0px 10px;
+		}
+
+		&__title {
+      margin: 0px 0px 60px 0px;
+      font-size: 60px;
+      text-align: center;
+      letter-spacing: 3px;
+      line-height: 70px;
+
+		}
+
+		&__subtitle {
+      color: #3b3b3b;
+      max-width: 800px;
+      margin: 0px auto 50px auto;
+		}
+
+		&__paragraphs {
+		}
+
+		&__item {
+      margin: 0px 0px 50px 0px;
+		}
+
+		&__paragraph-title {
+      font-size: 24px;
+      line-height: 30px;
+      margin: 0px 0px 20px 0px;
+		}
+
+		&__paragraph {
+      font-size: 16px;
+      color: #3b3b3b;
+		}
+
+		&__map {
+      margin: 50px 0px 0px 0px;
+      border: 0;
+      width: 1280px;
+      height: 600px;
+      @media (max-width: 1400px) {
+        width: 800px;
+        height: 400px;
+      }
+      @media (max-width: 900px) {
+        width: 700px;
+        height: 400px;
+      }
+      @media (max-width: 767px) {
+        margin: 25px 0px 0px 0px;
+        width: 600px;
+        height: 350px;
+
+        
+      }
+      @media (max-width: 625px) {
+        width: 450px;
+        height: 350px;
+      }
+      @media (max-width: 480px) {
+        width: 355px;
+        height: 355px;
+      }
+		}
+
+		&__link {
+      color: #3b3b3b;
+      
+      &:hover{
+        transition: all 0.8s ease 0.1s;
+        text-decoration: underline;
+      }
+		}
+    @media (max-width: 767px) {
+      &__body {
+      margin: 90px 0px 40px 0px;
+		  }
+      &__title {
+        margin: 0px 0px 30px 0px;
+        font-size: 50px;
+        line-height: 60px;
+      }
+      &__item {
+      margin: 0px 0px 25px 0px;
+		  }
+      &__subtitle {
+      margin: 0px auto 25px auto;
+		  }
+      &__link {
+        display: flex;
+		  }
+    }
+    
+}
+.link-number {
+  
+}
+.link-social {
+  display: flex;
 }
 
 
@@ -134,7 +235,7 @@ body.lock {
       max-width: 830px;
       display: flex;
       font-size: 0;
-      margin: 0px auto 90px auto;
+      margin: 30px auto 90px auto;
       // margin: 0px -15px;
       @media (max-width: 855px) {
                   flex-direction: column;
@@ -164,7 +265,15 @@ body.lock {
 		}
     }
 }
-
+.whoweare__title_columns {
+  margin: 90px 0px 0px 0px;
+  font-size: 28px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  position: relative;
+  text-align: center;
+}
 .item-whoweare {
 
 		&__icon {
@@ -229,6 +338,19 @@ body.lock {
 		}
 }
 //-------------------------------HEMA SECTION------------------------------
+.btn {
+  display: inline-block;
+  padding: 0px 42px;
+  line-height: 44px;
+  text-transform: uppercase;
+  font-size: 18px;
+  letter-spacing: 0.67px;
+  height: 47px;
+  border: 1px solid #141414;
+  color: #141414;
+  &:hover{}
+}
+
 .hema {
   color: #141414;
 		&__body {
@@ -251,6 +373,21 @@ body.lock {
 		&__subtitle {
       padding: 0px 0px 20px 0px;
 		}
+
+		&__footer {
+      text-align: center;
+      margin: 65px 0px 0px 0px;
+		}
+
+		&__btn {
+      
+      color: #000;
+      &:hover{
+        color: #74a9ad;
+        border: 1px solid #74a9ad;
+      }
+		}
+
     @media (max-width: 767px) {
       &__text {
       padding: 20px 0px 0px 0px;
