@@ -141,11 +141,15 @@ body.lock {
       font-size: 24px;
       line-height: 30px;
       margin: 0px 0px 20px 0px;
+      font-weight: bold;
 		}
 
 		&__paragraph {
       font-size: 16px;
       color: #3b3b3b;
+      span {
+        font-weight: bold;
+      }
 		}
 
 		&__map {
@@ -212,6 +216,34 @@ body.lock {
 }
 .link-social {
   display: flex;
+}
+.rules-item {
+  margin: -10px 0px 20px 0px;
+  display: flex;
+  & p:first-child {
+    font-weight: bold;
+    padding: 0px 50px 0px 0px;
+  }
+}
+.rules-item_7 {
+  margin: 0px 0px 10px 0px;
+}
+.rules-item_8 {
+  margin: 0px 0px 20px 0px;
+}
+.rules-item_10 {
+  & p:first-child {
+    
+    padding: 0px 40px 0px 0px;
+  }
+}
+.rules-subitem {
+  display: flex;
+  margin: 0px 0px 10px 0px;
+  & p:first-child {
+    font-weight: bold;
+    padding: 0px 30px 0px 60px;
+  }
 }
 
 
