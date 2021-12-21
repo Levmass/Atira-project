@@ -372,12 +372,12 @@ body.lock {
   }
 }
 .active-link {
-  color: cadetblue;
+  color: #3eb1d4;
   font-weight: 500;
 }
 .active-link:hover {
   background-color: #202020;
-  color: cadetblue;
+  color: #3eb1d4;
 }
 
 /* ------------------------------Main block--------------------------- */
