@@ -41,14 +41,21 @@
 .slider {
         position: relative;
         min-width: 0;
+        max-width: 600px;
+        margin: 0px auto;
         padding: 170px 0px 0px 0px;
 		&__body {
+            
 		}
 
 		&__item {
             position: relative;
             text-align: center;
             transition: all 0.8s ease 0s;
+            
+            img {
+                max-width: 500px;
+            }
             // opacity: 0.5;
             // &.slick-center {
             //     opacity: 1;
@@ -61,4 +68,9 @@
             }
             }
 		}
+        &__item_kolya {
+            img {
+                max-height: 350px;
+            }
+        }
 }
