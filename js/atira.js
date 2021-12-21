@@ -53,3 +53,18 @@ if (animItems.length > 0) {
         return { top: rect.top + scrollTop, left: rect.left + scrollLeft}
     }
 }
+
+$(document).ready(function () {
+    $('.slider__body').slick({
+        dots: true,
+        arrows: false,
+        accessibility: false,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplaySpeed: 3000,
+        adaptiveHeight: false,
+        speed: 800,
+        waitForAnimate: true,
+        centerMode: false,
+    });
+});
