@@ -694,6 +694,7 @@ body.lock {
     font-size: 18px;
     line-height: 22px;
     text-align: justify;
+    margin: 30px 0px 0px 0px;
   }
 }
 .item-whoweare__icon {
@@ -720,6 +721,11 @@ body.lock {
   width: 100%;
   height: 100%;
 }
+@media (max-width: 767px) {
+  .item-whoweare__icon {
+    margin: 20px auto 0px auto;
+  }
+}
 .item-whoweare__title {
   color: #000000;
   font-size: 22px;
@@ -728,6 +734,11 @@ body.lock {
   text-transform: uppercase;
   letter-spacing: 3.52px;
   margin: 15px 0px 35px 0px;
+}
+@media (max-width: 767px) {
+  .item-whoweare__title {
+    margin: 15px 0px 20px 0px;
+  }
 }
 .item-whoweare__text {
   color: #868585;
@@ -983,6 +994,11 @@ body.lock {
 .recon__text {
   padding: 120px 0px 0px 0px;
 }
+@media (max-width: 767px) {
+  .recon__text {
+    padding: 60px 0px 0px 0px;
+  }
+}
 .recon__subtitle a {
   color: #3eb1d4;
 }
@@ -1059,7 +1075,6 @@ body.lock {
   text-align: justify;
   color: #3b3b3b;
 }
-
 .slick-slider {
   min-width: 0;
 }
