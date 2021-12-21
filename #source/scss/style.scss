@@ -169,7 +169,7 @@ body.lock {
 }
 @media (max-width: 767px) {
   .whoweare__title_columns {
-    margin: 100px 0px 0px 0px;
+    margin: 60px 0px 0px 0px;
     font-size: 24px;
   }
   .whoweare__subtitle_columns {
@@ -250,6 +250,9 @@ body.lock {
 		}
     @keyframes sword1{0% {} 50% {} 100% {transform: rotate(25deg);}}
     @keyframes sword2{0% { } 50% {} 100% {transform: rotate(-25deg);}}
+    @media (max-width: 767px) {
+      margin: 60px auto 0px auto;
+    }
 }
 .animation_r {
   padding: 20px 0px;
@@ -280,6 +283,9 @@ body.lock {
 		}
     @keyframes axe1{0% {left: 0;} 50% {} 100% {left: 150px; transform: rotate(50deg); }}
     @keyframes axe2{0% {right: 0;} 50% {} 100% {right: 150px; transform: rotate(-50deg);}}
+    @media (max-width: 767px) {
+      margin: 70px auto 0px auto;
+    }
 }
 
 //-------------------------------HEMA SECTION------------------------------
@@ -423,7 +429,7 @@ body.lock {
 //-----------------------------------------CONTACTS--------------------------------
 .contacts {
 		&__content {
-      margin: 200px auto 230px auto;
+      margin: 100px auto 230px auto;
 		}
 		&__title {
       margin: 0px 0px 30px 0px;
@@ -442,6 +448,9 @@ body.lock {
 		&_author {
       font-weight: 700;
       margin: 40px 0px 25px 0px;
+      & a {
+        color: #3b3b3b;
+      }
 		}
 		&_logos {
       margin: 0px 0px 25px 0px;
