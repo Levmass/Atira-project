@@ -5,7 +5,7 @@
         z-index: 2;
         text-align: center;
         background-color: #141414;
-        opacity: 90%;
+        opacity: 100%;
         position: fixed;
         top: 0;
         left: 0;
@@ -85,10 +85,10 @@
                 line-height: 55px;
                 opacity: 100%;
             }
-            // &:before {
-            //     height: 55px;
-            //     overflow: auto;
-            // }
+            &:before {
+                // height: 55px;
+                overflow: auto;
+            }
             &__logo {
                 display: block;
                 position: absolute;
@@ -162,7 +162,6 @@
             }
             &__list {
                 display: block;
-                
             }
             &__list li {
                 position: relative;
@@ -180,7 +179,6 @@
             &__link {
                 display: block;
                 font-size: 24px;
-                
             }
         }
 }

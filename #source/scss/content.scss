@@ -13,7 +13,6 @@
       text-align: center;
       letter-spacing: 3px;
       line-height: 70px;
-
 		}
 
 		&__subtitle {
@@ -24,11 +23,13 @@
 		}
 
 		&__paragraphs {
+
 		}
 
 		&__item {
       margin: 0px 0px 50px 0px;
 		}
+
 		&__paragraph-title {
       font-size: 24px;
       line-height: 30px;
@@ -64,8 +65,6 @@
         margin: 25px 0px 0px 0px;
         width: 600px;
         height: 350px;
-
-        
       }
       @media (max-width: 625px) {
         width: 450px;
@@ -79,7 +78,6 @@
 
 		&__link {
       color: #3b3b3b;
-      
       &:hover{
         transition: all 0.8s ease 0.1s;
         text-decoration: underline;
@@ -93,7 +91,6 @@
         margin: 0px 0px 30px 0px;
         font-size: 30px;
         line-height: 36px;
-        
       }
       &__item {
       margin: 0px 0px 25px 0px;
@@ -112,6 +109,7 @@
 }
 .link-social {
   display: flex;
+  max-width: 250px;
 }
 .rules-item {
   margin: -10px 0px 20px 0px;
@@ -158,4 +156,59 @@
       flex: 0 1 100%;
     }
   }
+}
+.item-vneski {
+  text-align: center;
+}
+.link-vneski {
+  // border: 1px solid #141414;
+  // padding: 15px 20px;
+  color: #000;
+  text-decoration: underline;
+  // position: relative;
+  // &::after {
+  //   content: '';
+  //   position: absolute;
+  //   width: 100%;
+  //   height: 100%;
+  //   top: 0;
+  //   left: 0;
+  //   background-color: #141414;
+  //   scale: 0;
+  //   transition: all 0.35s ease 0s;
+  //   z-index: -1;
+  // }  
+  &:hover {
+    color: #3eb1d4;
+    text-decoration: underline;
+    // &:after{
+    //   scale: 1;
+    // }
+  }
+}
+@media (max-width: 767px) {
+    .item-vneski {
+      text-align: left;
+    }
+    // .link-vneski {
+    //   border: none;
+    //   padding: 0;
+    //   &::after {
+    //     content: '';
+    //     position: absolute;
+    //     width: 100%;
+    //     height: 100%;
+    //     top: 0;
+    //     left: 0;
+    //     background-color: #141414;
+    //     scale: none;
+    //     transition: all 0.35s ease 0s;
+    //     z-index: -1;
+    //   }
+    //   &:hover {
+    //     color: #f2f2f2;
+    //     &:after{
+    //       scale: 0;
+    //     }
+    //   }
 }

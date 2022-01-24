@@ -70,6 +70,10 @@ body.lock {
 .main-screen {
     flex: 1 0 100%;
     position: relative;
+    margin: 70px 0px 0px 0px;
+    @media (max-width: 1010px) {
+      margin: 50px 0px 0px 0px;
+    }
     &__content {
     }
     &__bg {
@@ -88,7 +92,7 @@ body.lock {
     }    
     &__text {
         position: absolute;
-        top: 50%;
+        top: 40%;
         left: 0;
         right: 0;
         bottom: 50%;
@@ -154,7 +158,6 @@ body.lock {
   letter-spacing: 1px;
   position: relative;
   text-align: center;
-  
 }
 .whoweare__subtitle_columns {
   color: #3b3b3b;
@@ -173,7 +176,7 @@ body.lock {
     font-size: 24px;
   }
   .whoweare__subtitle_columns {
-    font-size: 18px;
+    font-size: 14px;
     line-height: 22px;
     text-align: justify;
     margin: 30px 0px 0px 0px;
@@ -383,7 +386,7 @@ body.lock {
   font-size: 18px;
   line-height: 24px;
 }
-@media (max-width: 1010px) {
+@media (max-width: 500px) {
   .photo-body {
     padding: 0px 0px 0px 0px;
   }
@@ -414,6 +417,10 @@ body.lock {
         background-color: #000000;
         margin: 0px 0px 0px -40px;
     }
+    @media (max-width: 767px) {
+    font-size: 26px;
+    // text-align: left;
+  }
 }
 .subtitle {
   font-size: 18px;
@@ -421,6 +428,7 @@ body.lock {
   text-align: justify;
   color: #3b3b3b;
   @media (max-width: 767px) {
+    font-size: 14px;
     // text-align: left;
   }
 }
