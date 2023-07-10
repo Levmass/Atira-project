@@ -1,0 +1,294 @@
+.hema-page {
+    margin: 150px 0px 100px 0px;
+    position: relative;
+        &::after {
+            content: '';
+            background-color: #000;
+            height: 2px;
+            width: 80%;
+            position: absolute;
+            left: 0;
+            top: 190px;
+        }
+        
+    &__title {
+        text-align: center;
+        margin: 0px 0px 30px 0px;
+        font-size: 60px;
+    }
+
+    &__subtitle {
+        font-size: 54px;
+        text-align: center;
+        margin: 0px 0px 100px 0px;
+    }
+
+    &__text {
+        padding: 0px 10px 0px 10px;
+        max-width: 830px;
+        margin: 0px auto;
+        font-size: 18px;
+        line-height: 24px;
+        text-align: justify;
+        color: #3b3b3b;
+    }
+    @media (max-width: 1200px) {
+        & {
+            &::after {
+                top: 110px;
+            }
+        }
+        &__title {
+            margin: 0px 0px 15px 0px;
+            font-size: 36px;
+        }
+        &__subtitle {
+            font-size: 32px;
+            margin: 0px 0px 60px 0px;
+        }
+    }
+    @media (max-width: 767px) {
+        & {
+            margin: 90px 0px 40px 0px;
+        }
+
+        &__title {
+            margin: 0px 0px 10px 0px;
+            font-size: 28px;
+            line-height: 36px;
+        }
+        &__subtitle {
+            margin: 0px 0px 60px 0px;
+            font-size: 26px;
+            line-height: 34px;
+        }
+        &__text {
+            font-size: 14px;
+        }
+    }
+    @media (max-width: 589px) {
+        & {
+            &::after {
+                top: 180px;
+            }
+        }
+        &__title {
+            max-width: 300px;
+            margin: 0px auto 10px auto;
+        }
+
+        &__subtitle {
+            max-width: 300px;
+            margin: 0px auto 60px auto;
+        }
+    }
+}
+
+.slider-hema {
+
+    margin: 100px 0px 0px 0px;
+    position: relative;
+    &::before {
+        content: '';
+        background-color: #000;
+        height: 2px;
+        width: 80%;
+        position: absolute;
+        right: 0;
+        top: -50px;
+        @media (max-width: 767px) {
+            top: -30px;
+        }
+    }
+    &__title {
+        font-size: 34px;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 4px;
+        position: relative;
+        text-align: center;
+        padding: 0px 0px 35px 0px;
+    
+        @media (max-width: 767px) {
+            font-size: 26px;
+        }
+    }
+
+    &__body {}
+
+    &__item {}
+
+    &__image {
+        margin: 0px auto;
+        max-width: 800px;
+        padding: 0px 25px;
+        img {
+            width: 100%;
+        }
+    }
+
+    &__image-text {
+        padding: 0px 10px;
+        margin: 15px auto 0px auto;
+        text-align: center;
+        @media (max-width: 419px) {
+            margin: 10px 0px 0px 0px;
+            text-align: justify;
+        }
+    }
+
+    &__subtitle {
+        margin: 100px auto 0px auto;
+        padding: 0px 10px 0px 10px;
+        max-width: 830px;
+        font-size: 18px;
+        line-height: 24px;
+        text-align: justify;
+        color: #3b3b3b;
+
+    }
+
+    @media (max-width: 767px) {
+        & {
+            margin: 60px 0px 0px 0px;
+        }
+        &__image-text {
+            font-size: 14px;
+        }
+        &__subtitle {
+            margin: 50px auto 0px auto;
+            font-size: 14px;
+        }
+        &__image-text {
+            margin: 10px 0px 0px 0px;
+        }
+    }
+
+}
+
+.hema-page-text {
+    margin: 100px 0px 0px 0px;
+    &__block {
+        padding: 0px 10px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    &__item {
+        display: flex;
+        &:first-child {
+            margin: 0px 0px 50px 0px;
+        }
+    }
+
+    &__image {
+        max-width: 620px;
+        order: 1;
+        &:last-child {
+            order: 2;
+        }
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    &__text {
+        max-width: 620px;
+        margin: auto auto;
+        padding: 0px 30px 0px 30px;
+        order: 2;
+        &:last-child {
+            order: 1;
+        }
+    }
+
+    &__title {
+        text-transform: uppercase;
+        margin: 0px 0px 30px 0px;
+    }
+
+    &__subtitle {
+        line-height: 20px;
+    }
+
+    @media (max-width: 1200px) {
+        &__item {
+            flex-direction: column;
+        }
+        &__image {
+            margin: 0px auto;
+            &:last-child {
+                order: 1;
+            }
+        }
+        &__text {
+            &:last-child {
+                order: 2;
+            }
+        }
+        &__title {
+            text-align: center;
+            margin: 30px 0px 30px 0px;
+        }
+    }
+
+    @media (max-width: 767px) {
+        & {
+            margin: 60px 0px 0px 0px;
+        }
+    }
+
+    @media (max-width: 589px) {
+        &__text {
+            padding: 0px 0px;
+            margin: 0px -10px;
+        }
+    }
+}
+
+.hema-page-contacts {
+    margin: 150px 0px 0px 0px;
+    &__logo {
+        height: 400px;
+        background-color: #040404; 
+    }
+
+    &__image {
+        width: 323px;
+        margin: 0px auto;
+        padding: 15px 0px;
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    &__content {
+        margin: 100px auto 230px auto;
+    }
+
+    &__title {
+        margin: 0px 0px 30px 0px;
+    }
+
+    &__body {
+        text-align: center;
+    }
+
+    @media (max-width: 767px) {
+        & {
+            margin: 60px 0px 0px 0px;
+        }
+        &__logo {
+            height: 300px;
+        }
+        &__image {
+            width: 235px;
+        }
+        &__content {
+            margin: 100px auto 110px auto;
+        }
+    }
+}

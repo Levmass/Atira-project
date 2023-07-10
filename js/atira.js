@@ -68,3 +68,33 @@ $(document).ready(function () {
         centerMode: false,
     });
 });
+
+$(document).ready(function () {
+    $('.slider-hema__body').slick({
+        dots: true,
+        arrows: false,
+        accessibility: false,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplaySpeed: 3000,
+        adaptiveHeight: false,
+        speed: 800,
+        waitForAnimate: true,
+        centerMode: false,
+    });
+});
+
+$(document).ready(function () {
+    $('.slider-reenactment__body').slick({
+        dots: true,
+        arrows: false,
+        accessibility: false,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplaySpeed: 3000,
+        adaptiveHeight: false,
+        speed: 800,
+        waitForAnimate: true,
+        centerMode: false,
+    });
+});
