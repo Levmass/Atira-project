@@ -1,3 +1,4 @@
+
 @import "nullstyle.scss";
 
 @import url('https://fonts.googleapis.com/css2?family=Dosis:wght@300;400;500;600&family=Grenze+Gotisch:wght@300&family=Montserrat:wght@300;400;500&family=Raleway:wght@300;400;500&display=swap');
@@ -78,7 +79,7 @@ body.lock {
       padding: 55px 0px 0px 0px;
     }
   
-    &__content {}
+    // &__content {}
   
     &__bg {
       position: absolute;
@@ -118,10 +119,10 @@ body.lock {
 		&__text {
       padding: 220px 0px 0px 0px;
 		}
-		&__title { 
-		}
-		&__subtitle {
-    }
+		// &__title { 
+		// }
+		// &__subtitle {
+    // }
 		&__row {
       display: flex;
       font-size: 0;
@@ -308,21 +309,21 @@ body.lock {
   height: 47px;
   border: 1px solid #141414;
   color: #141414;
-  &:hover{}
+  // &:hover{}
 }
 .hema {
   color: #141414;
-		&__body {
-		}
-		&__photo {
-		}
-		&__image {
-		}
+		// &__body {
+		// }
+		// &__photo {
+		// }
+		// &__image {
+		// }
 		&__text {
       padding: 120px 0px 0px 0px;
 		}
-		&__title {
-		}
+		// &__title {
+		// }
 		&__subtitle {
       padding: 0px 0px 0px 0px;
       & a {
@@ -362,8 +363,8 @@ body.lock {
       }  
 		}
 
-		&__title {
-		}
+		// &__title {
+		// }
 
 		&__subtitle {
       & a {
@@ -476,10 +477,10 @@ body.lock {
       img{
         max-width: 35px;
         max-height: 35px;
-        &:hover{
-          // background: #3eb1d4;
-          // border-radius: 50%;
-        }
+        // &:hover{
+        //   background: #3eb1d4;
+        //   border-radius: 50%;
+        // }
       }
 		}
 		&_emails {
@@ -502,4 +503,496 @@ body.lock {
 @import "reenactment.scss";
 
 //---------------------------------------FOOTER--------------------------------------
+
+@import "nullstyle.scss";
+
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@300;400;500;600&family=Grenze+Gotisch:wght@300&family=Montserrat:wght@300;400;500&family=Raleway:wght@300;400;500&display=swap');
+
+body {
+  // height: 100%;
+  background-color: #f2f2f2;
+  font-family: "Raleway", sans-serif;
+}
+.font-en {
+  font-family: "Dosis", sans-serif;
+}
+.font-en_text {
+  font-size: 20px;
+  font-weight: bold;
+}
+body.lock {
+  overflow: hidden;
+}
+.wrapper {
+  max-width: 1920px;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.container {
+  max-width: 1280px;
+  margin: 0px auto;
+}
+.ibg {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    img{display: none;}
+}
+
+@media (max-width: 1251px) {
+  .wrapper {
+    max-width: 1250px;
+  }
+}
+@media (max-width: 971px) {
+  .wrapper {
+    max-width: 970px;
+  }
+}
+@media (max-width: 751px) {
+  .wrapper {
+    max-width: 750px;
+  }
+}
+@media (max-width: 376px) {
+  .wrapper {
+    max-width: 375px;
+  }
+}
+
+@import "header.scss";
+
+/* ------------------------------Main block--------------------------- */
+.page {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.main-screen {
+    flex: 1 0 100%;
+    position: relative;
+    margin: 70px 0px 0px 0px;
+    @media (max-width: 1010px) {
+      margin: 50px 0px 0px 0px;
+    }
+    // &__content {
+    // }
+    &__bg {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        -webkit-filter: grayscale(100%);
+        filter: grayscale(100%);
+        transition: all 1.2s ease 0s;
+        &:hover{
+          -webkit-filter: grayscale(0%);
+          filter: grayscale(0%);
+        }
+    }    
+    &__text {
+        position: absolute;
+        top: 40%;
+        left: 0;
+        right: 0;
+        bottom: 50%;
+        font-size: 65px;
+        letter-spacing: 5px;
+        color: #f2f2f2;
+        text-align: center;
+        @media (max-width: 1010px) {
+          font-size: 35px;
+        }
+    }
+}
+//-------------------------------CONTENT---------------------------------------
+@import "content.scss";
+//-------------------------------WHOWEARE SECTION------------------------------
+.whoweare {
+		&__text {
+      padding: 220px 0px 0px 0px;
+		}
+		// &__title { 
+		// }
+		// &__subtitle {
+    // }
+		&__row {
+      display: flex;
+      font-size: 0;
+      margin: 0px auto 250px auto;
+      @media (max-width: 855px) {
+        flex-direction: column;
+        margin: 0px auto;
+      }
+		}
+		&__column {
+      flex: 0 0 33.333%;
+      padding: 0px 15px;
+      @media (max-width: 855px) {
+        flex: 1 0 100%;
+      }
+		}
+		&__body {
+      margin: 220px 0px 0px 0px;
+		}
+		&__photo {
+      img {
+        width: 100%;
+        min-height: 100%;
+      }
+		}
+    @media (max-width: 767px) {
+      &__text {
+      padding: 60px 0px 0px 0px;
+		  }
+      &__body {
+        margin: 60px 0px 0px 0px;
+		  }
+    }
+}
+.whoweare__title_columns {
+  margin: 220px 0px 0px 0px;
+  font-size: 28px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  position: relative;
+  text-align: center;
+}
+.whoweare__subtitle_columns {
+  color: #3b3b3b;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 24px;
+  font-style: italic;
+  letter-spacing: 0.6px;
+  margin: 30px 0px 20px 0px;
+  padding: 0px 15px; 
+}
+@media (max-width: 767px) {
+  .whoweare__title_columns {
+    margin: 60px 0px 0px 0px;
+    font-size: 24px;
+  }
+  .whoweare__subtitle_columns {
+    font-size: 14px;
+    line-height: 22px;
+    text-align: justify;
+    margin: 30px 0px 0px 0px;
+  }  
+}
+.item-whoweare {
+		&__icon {
+      margin: 0px auto;
+      border-radius: 50%;
+      max-width: 92px;
+      min-height: 92px;
+      border: 2px solid #f1f1f1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+      }
+      @media (max-width: 767px) {
+        margin: 20px auto 0px auto;
+      }
+		}
+		&__title {
+      color: #000000;
+      font-size: 22px;
+      font-weight: 400;
+      text-align: center;
+      text-transform: uppercase;
+      letter-spacing: 3.52px;
+      margin: 15px 0px 35px 0px;
+      @media (max-width: 767px) {
+        margin: 15px 0px 20px 0px;
+      }
+		}
+		&__text {
+      color: #868585;
+      font-size: 14px;
+      font-weight: 300;
+      line-height: 26px;
+      text-align: center;
+		}
+}
+//-----------------------------------ANIMATION--------------------------------
+.animation {
+  padding: 20px 0px;
+  margin: 100px auto 0px auto;
+  // max-width: 150px;
+  background-color: #141414;
+  text-align: center;
+		&__body {
+      display: flex;
+      margin: 0px auto;
+      max-width: 150px;
+		}
+		&__item {
+      flex: 0 1 50%;
+      height: 300px;
+      max-width: 75px;
+      position: relative;
+      img{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+      }
+      &._active:nth-child(1){animation-name: sword1;animation-duration: 1s;animation-timing-function: cubic-bezier(0.68,0,0.265,1.55);animation-iteration-count: 1;animation-direction: normal;animation-play-state: running;animation-delay: 1s;animation-fill-mode: both;}
+      &._active:nth-child(2){animation-name: sword2;animation-duration: 1s;animation-timing-function: cubic-bezier(0.68,0,0.265,1.55); animation-iteration-count: 1;animation-direction: normal;animation-play-state: running;animation-delay: 1s;animation-fill-mode: both;}
+		}
+    @keyframes sword1{0% {} 50% {} 100% {transform: rotate(25deg);}}
+    @keyframes sword2{0% { } 50% {} 100% {transform: rotate(-25deg);}}
+    @media (max-width: 767px) {
+      margin: 60px auto 0px auto;
+    }
+}
+.animation_r {
+  padding: 20px 0px;
+  margin: 100px auto 0px auto;
+  background-color: #141414;
+  text-align: center;
+		&__body {
+      display: flex;
+      justify-content: space-between;
+      margin: 0px auto;
+      max-width: 400px;
+		}
+
+		&__item {
+      flex: 0 1 50%;
+      height: 300px;
+      max-width: 75px;
+      position: relative;
+      img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+      }
+      &._active:nth-child(1){animation-name: axe1;animation-duration: 1s;animation-timing-function: cubic-bezier(0.68,0,0.265,1.55);animation-iteration-count: 1;animation-direction: normal;animation-play-state: running;animation-delay: 1s;animation-fill-mode: both;}
+      &._active:nth-child(2){animation-name: axe2;animation-duration: 1s;animation-timing-function: cubic-bezier(0.68,0,0.265,1.55); animation-iteration-count: 1;animation-direction: normal;animation-play-state: running;animation-delay: 1s;animation-fill-mode: both;}
+		}
+    @keyframes axe1{0% {left: 0;} 50% {} 100% {left: 150px; transform: rotate(50deg); }}
+    @keyframes axe2{0% {right: 0;} 50% {} 100% {right: 150px; transform: rotate(-50deg);}}
+    @media (max-width: 767px) {
+      margin: 70px auto 0px auto;
+    }
+}
+
+//-------------------------------HEMA SECTION------------------------------
+.btn {
+  display: inline-block;
+  padding: 0px 42px;
+  line-height: 44px;
+  text-transform: uppercase;
+  font-size: 18px;
+  letter-spacing: 0.67px;
+  height: 47px;
+  border: 1px solid #141414;
+  color: #141414;
+  // &:hover{}
+}
+.hema {
+  color: #141414;
+		// &__body {
+		// }
+		// &__photo {
+		// }
+		// &__image {
+		// }
+		&__text {
+      padding: 120px 0px 0px 0px;
+		}
+		// &__title {
+		// }
+		&__subtitle {
+      padding: 0px 0px 0px 0px;
+      & a {
+        color: #3eb1d4;
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+		}
+		&__footer {
+      text-align: center;
+      margin: 80px 0px 0px 0px;
+		}
+		&__btn {
+      color: #000;
+      &:hover{
+        color: #3eb1d4;
+        border: 1px solid #3eb1d4;
+      }
+		}
+    @media (max-width: 767px) {
+      &__text {
+      padding: 60px 0px 0px 0px;
+		  }
+      &__footer {
+      margin: 60px 0px 0px 0px;
+		  }
+    }
+}
+//----------------------------------------RECON-----------------------------------------
+.recon {
+
+		&__text {
+      padding: 120px 0px 0px 0px;
+		  @media (max-width: 767px) {
+        padding: 60px 0px 0px 0px;
+      }  
+		}
+
+		// &__title {
+		// }
+
+		&__subtitle {
+      & a {
+        color: #3eb1d4;
+        &:hover {
+          text-decoration: underline;
+        }
+		  }
+    }
+}
+//----------------------------------------PHOTO AND TEXT--------------------------------
+.photo-body {
+  display: flex;
+  flex-wrap: wrap;
+}
+.photo {
+  flex: 1 0 50%;
+}
+.image {
+  max-width: 100%;
+  padding: 10px;
+}
+.text {
+  max-width: 830px;
+  margin: 0px auto;
+  font-size: 18px;
+  line-height: 24px;
+}
+@media (max-width: 500px) {
+  .photo-body {
+    padding: 0px 0px 0px 0px;
+  }
+  .photo {
+    flex: 1 1 100%;
+  }
+  .image {
+    margin: -5px 0px;
+    padding: 10px 0px;
+  }
+}
+.title {
+  margin: 0px 0px 35px 0px;
+  font-size: 34px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  position: relative;
+  text-align: center;
+  padding: 0px 0px 35px 0px;
+    &::after{
+        content: '';
+        position: absolute;
+        width: 81px;
+        bottom: 0;
+        height: 1px;
+        left: 50%;
+        background-color: #000000;
+        margin: 0px 0px 0px -40px;
+    }
+    @media (max-width: 767px) {
+    font-size: 26px;
+    // text-align: left;
+  }
+}
+.subtitle {
+  font-size: 18px;
+  padding: 0px 10px 0px 10px;
+  text-align: justify;
+  color: #3b3b3b;
+  @media (max-width: 767px) {
+    font-size: 14px;
+    // text-align: left;
+  }
+}
+//-----------------------------------------SLIDER----------------------------------
+@import "slider.scss";
+//-----------------------------------------CONTACTS--------------------------------
+.contacts {
+		&__content {
+      margin: 100px auto 230px auto;
+		}
+		&__title {
+      margin: 0px 0px 30px 0px;
+		}
+		&__body {
+      text-align: center;
+		}
+}
+.item-contacts {
+  color: #3b3b3b;
+		&_text {
+      font-size: 16px;
+      font-weight: 300;
+      line-height: 26px;  
+		}
+		&_author {
+      font-weight: 700;
+      margin: 40px 0px 25px 0px;
+      & a {
+        color: #3b3b3b;
+      }
+		}
+		&_logos {
+      margin: 0px 0px 25px 0px;
+      justify-content: center;
+      display: flex;
+		}
+		&_logo {
+      padding: 0px 10px;
+      img{
+        max-width: 35px;
+        max-height: 35px;
+        // &:hover{
+        //   background: #3eb1d4;
+        //   border-radius: 50%;
+        // }
+      }
+		}
+		&_emails {
+      margin: 0px 0px 50px 0px;
+		}
+		&_email {
+      
+      color: #3b3b3b;
+      &:hover {
+        text-decoration: underline;
+      }
+		}
+}
+//---------------------------------------FOOTER--------------------------------------
+
 @import "footer.scss";
