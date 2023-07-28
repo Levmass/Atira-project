@@ -57,7 +57,7 @@ if (animItems.length > 0) {
 $(document).ready(function () {
     $('.slider__body').slick({
         dots: true,
-        arrows: false,
+        arrows: true,
         accessibility: false,
         slidesToShow: 1,
         slidesToScroll: 1,
