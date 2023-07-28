@@ -3151,7 +3151,6 @@ body.lock {
 }
 .footer__column {
   min-height: 200px;
-  padding: 0px 10px;
   position: relative;
 }
 .footer__column:after {
@@ -3246,7 +3245,7 @@ body.lock {
 }
 
 .socials-list {
-  width: 350px;
+  max-width: 350px;
   height: 140px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -3292,11 +3291,11 @@ body.lock {
   }
   .footer__column:last-child {
     padding: 30px 10px 0px 10px;
-    max-width: 400px;
+    max-width: 410px;
   }
   .atira-column {
     margin: 0px auto;
-    max-width: 380px;
+    max-width: 410px;
   }
   .atira-item {
     margin: 0px auto 15px auto;
