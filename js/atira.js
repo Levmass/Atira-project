@@ -63,7 +63,7 @@ $(document).ready(function () {
         slidesToScroll: 1,
         autoplaySpeed: 3000,
         adaptiveHeight: false,
-        speed: 800,
+        speed: 300,
         waitForAnimate: true,
         centerMode: false,
     });
@@ -98,3 +98,5 @@ $(document).ready(function () {
         centerMode: false,
     });
 });
+
+Spotlight.show(gallery);

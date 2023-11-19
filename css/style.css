@@ -1199,6 +1199,9 @@ body.lock {
 .slider__body {
   position: relative;
 }
+.slider__body:hover {
+  cursor: pointer;
+}
 .slider__item {
   position: relative;
   text-align: center;
@@ -3034,6 +3037,9 @@ body.lock {
 .slider__body {
   position: relative;
 }
+.slider__body:hover {
+  cursor: pointer;
+}
 .slider__item {
   position: relative;
   text-align: center;
@@ -3126,6 +3132,61 @@ body.lock {
 }
 .item-contacts_email:hover {
   text-decoration: underline;
+}
+
+.gallery {
+  margin: 150px 0px 100px 0px;
+}
+.gallery__group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.gallery__item {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 25%;
+          flex: 1 1 25%;
+  padding: 10px 10px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+@media (max-width: 1000px) {
+  .gallery__item {
+    padding: 5px 5px;
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 33%;
+            flex: 1 1 33%;
+  }
+}
+@media (max-width: 700px) {
+  .gallery__item {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 50%;
+            flex: 1 1 50%;
+  }
+}
+.gallery__photo img {
+  width: 100%;
+}
+.gallery__BW-photo {
+  position: relative;
+}
+.gallery__BW-photo img {
+  width: 100%;
+}
+.gallery__BW-photo:hover:after {
+  cursor: pointer;
+  opacity: 50%;
+  visibility: visible;
+}
+.gallery__BW-a {
+  color: #040404;
+}
+.gallery__BW-a:hover {
+  color: #564655;
 }
 
 .footer {

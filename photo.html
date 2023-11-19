@@ -6,8 +6,10 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="author" content="Samvel Mkrtychian">
         <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/spotlight.min.css">
         <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
-        <title>Photo</title>
+        <!-- <link rel="preload" href="spotlight.bundle.js" as="script"> -->
+        <title>Gallery</title>
     </head>
     <body>
         <div class="wrapper">
@@ -35,7 +37,7 @@
                                 <li><a class="header__link" href="reenactment.html">Реєнект</a></li>
                                 <li><a class="header__link" href="trainings.html">Тренування</a></li>
                                 <li><a class="header__link" href="contact.html">Контакти</a></li>
-                                <li><a class="header__link" href="photo.html">Фото</a></li>
+                                <li><a class="header__link" href="photo.html">Галерея</a></li>
                             </Ul>
                         </nav>
                     </div>
@@ -43,7 +45,21 @@
             </div>
 
                 <div class="content">
-        
+                    <div class="gallery">
+                        <div class="container">
+                            <div class="gallery__title content__title">Галерея</div>  
+                            <div class="gallery__body">
+                                <div class="gallery__row">
+                                    <div class="gallery__BW">
+                                        <a href="BW.html" class="gallery__BW-a"><div class="gallery__BW-title title">Галицький замок Квітень 2023</div></a>
+                                        <div class="gallery__BW-photo">
+                                            <a href="BW.html"><img src="img/gallery/BW/BW-4.jpg"></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
             <footer class="footer">
@@ -131,7 +147,8 @@
             </footer>
             </main>
         </div>
-        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
         <script src="js/atira.js"></script>
+        <script src="js/spotlight.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     </body>
 </html>
