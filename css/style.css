@@ -3171,22 +3171,19 @@ body.lock {
 .gallery__photo img {
   width: 100%;
 }
-.gallery__BW-photo {
-  position: relative;
-}
 .gallery__BW-photo img {
   width: 100%;
-}
-.gallery__BW-photo:hover:after {
-  cursor: pointer;
-  opacity: 50%;
-  visibility: visible;
 }
 .gallery__BW-a {
   color: #040404;
 }
 .gallery__BW-a:hover {
   color: #564655;
+}
+@media (max-width: 767px) {
+  .gallery {
+    margin: 90px 0px 40px 0px;
+  }
 }
 
 .footer {
