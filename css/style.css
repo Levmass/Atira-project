@@ -227,7 +227,7 @@ body.lock {
   background-color: #f2f2f2;
   color: black;
 }
-@media (max-width: 767px) {
+@media (max-width: 776px) {
   .header body.lock {
     overflow: hidden;
   }
@@ -2099,7 +2099,7 @@ body.lock {
   background-color: #f2f2f2;
   color: black;
 }
-@media (max-width: 767px) {
+@media (max-width: 776px) {
   .header body.lock {
     overflow: hidden;
   }
